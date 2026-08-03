@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="apexads-advertising-hub is an HTML-based web advertising project for displaying promotional content in a browser. Learn how to view files locally, run a local server, configure content, and deploy the project.">
+<meta name="keywords" content="apexads, advertising hub, HTML advertising, web ads, browser advertising, promotional content, local server, deploy advertising project">
+<meta name="author" content="Fat-mailcar242">
+<meta name="robots" content="index, follow">
+<title>apexads-advertising-hub - Display Ads in Your Browser</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.7;
+    padding: 0;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 24px;
+  }
+  header {
+    background: linear-gradient(135deg, #1a73e8, #4a90d9);
+    color: #fff;
+    padding: 48px 32px;
+    border-radius: 12px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 16px rgba(26, 115, 232, 0.25);
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  header p {
+    font-size: 1.1em;
+    opacity: 0.92;
+  }
+  .badge-row {
+    text-align: center;
+    margin: 20px 0 28px 0;
+  }
+  .badge {
+    display: inline-block;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(26, 115, 232, 0.3);
+    transition: background-color 0.2s;
+  }
+  .badge:hover {
+    background-color: #1557b0;
+  }
+  .badge-secondary {
+    display: inline-block;
+    background-color: #5a6b7d;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(90, 107, 125, 0.3);
+    margin-left: 12px;
+  }
+  .badge-secondary:hover {
+    background-color: #4a5a6a;
+  }
+  section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  section h2 {
+    font-size: 1.4em;
+    margin-bottom: 14px;
+    color: #1a1a2e;
+    border-bottom: 2px solid #e8ecf1;
+    padding-bottom: 8px;
+  }
+  section h3 {
+    font-size: 1.1em;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+  }
+  section p {
+    margin-bottom: 12px;
+    font-size: 0.98em;
+  }
+  ul, ol {
+    margin: 8px 0 16px 24px;
+  }
+  li {
+    margin-bottom: 6px;
+    font-size: 0.97em;
+  }
+  code {
+    background-color: #f0f2f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.92em;
+    color: #c0392b;
+  }
+  pre {
+    background-color: #f0f2f5;
+    padding: 14px 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 12px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+  .highlight-box {
+    background-color: #eef6ff;
+    border-left: 4px solid #1a73e8;
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    margin: 14px 0;
+  }
+  .highlight-box p {
+    margin-bottom: 0;
+  }
+  .download-link {
+    display: inline-block;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(26, 115, 232, 0.25);
+  }
+  .download-link:hover {
+    background-color: #1557b0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid #e0e4e8;
+  }
+  th {
+    background-color: #f7f9fb;
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85em;
+    color: #888;
+  }
+  @media (max-width: 600px) {
+    header { padding: 32px 18px; }
+    header h1 { font-size: 1.5em; }
+    section { padding: 18px 16px; }
+    .badge, .badge-secondary { display: block; margin: 8px auto; width: 80%; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+<h1>🚀 apexads-advertising-hub</h1>
+<p>Display promotional content in your browser with ease</p>
+</header>
+
+<div class="badge-row">
+<a href="https://github.com/Fat-mailcar242/apexads-advertising-hub" class="badge">📥 Visit This Page to Download</a>
+<a href="https://github.com/Fat-mailcar242/apexads-advertising-hub" class="badge-secondary">📖 View on GitHub</a>
+</div>
+
+<section>
+<h2>📋 Overview</h2>
+<p>ApexAds is an HTML-based web advertising project. It lets you display promotional content directly in a web browser. You can view the files on your own computer, run a local server, configure the advertising content, and deploy the project when you are ready.</p>
+<p>This tool is designed for people who want to manage and show ads without needing technical skills. The project uses simple HTML files that open in any modern browser. You do not need to know how to write code to use it.</p>
+<p>The project is built to work in 2026 and beyond. It supports local viewing, which means you can test your ads before you share them with others. You can also set up a small local server to preview how the ads look in a real browsing environment.</p>
+</section>
+
+<section>
+<h2>📥 Download &amp; Install</h2>
+<p>To get started, visit the project page and download the latest version of the software:</p>
+<p><a href="https://github.com/Fat-mailcar242/apexads-advertising-hub" class="download-link">🔗 Visit This Page to Download</a></p>
+<div class="highlight-box">
+<p><strong>How to download:</strong> Click the link above. You will go to the GitHub repository page. Look for the latest release or the main folder. Download the files to a folder on your computer where you can easily find them, such as your Desktop or Documents folder.</p>
+</div>
+<h3>What You Need Before You Start</h3>
+<ul>
+<li>A computer running Windows 10 or later.</li>
+<li>A modern web browser such as Google Chrome, Mozilla Firefox, or Microsoft Edge.</li>
+<li>At least 100 MB of free disk space for the project files.</li>
+<li>An internet connection the first time you download the project.</li>
+</ul>
+<p>Once you have downloaded the files, you can open them right away. No special installation program is required. The project runs directly in your browser.</p>
+</section>
+
+<section>
+<h2>⚙️ How It Works</h2>
+<p>ApexAds works by loading HTML files in your browser. Each HTML file contains the structure and content of an advertisement or a set of ads. The project includes a simple local server option that lets you see how the ads behave in a real web environment.</p>
+<p>Here is the basic flow:</p>
+<ol>
+<li>You download the project files from the link above.</li>
+<li>You open the HTML files in your browser to view the ads.</li>
+<li>You edit the content files to change text, images, or links.</li>
+<li>You run the local server to preview changes before going live.</li>
+<li>You deploy the project to a web server or hosting platform.</li>
+</ol>
+<p>The project is lightweight and does not require a powerful computer. It uses standard web technologies that every browser already supports. You can view the ads on your desktop, laptop, or tablet.</p>
+</section>
+
+<section>
+<h2>📂 What Is Inside the Project</h2>
+<p>The project folder contains several folders and files. Here is what you will find:</p>
+<table>
+<tr><th>File or Folder</th><th>Purpose</th></tr>
+<tr><td><code>index.html</code></td><td>The main page that loads first when you open the project.</td></tr>
+<tr><td><code>ads/</code></td><td>A folder that holds all advertising content files.</td></tr>
+<tr><td><code>config/</code></td><td>Configuration files for customizing how the ads appear and behave.</td></tr>
+<tr><td><code>styles/
